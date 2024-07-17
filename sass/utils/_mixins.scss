@@ -1,0 +1,19 @@
+@mixin flex-center-horizontal {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center-vertical {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center-hev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font-shrikhand {
+    font-family: "Shrikhand", serif;
+}

@@ -1,0 +1,11 @@
+/*Import provenant du dossier GENERAL*/
+@import 'base/general';
+/*Import provenant du dossier UTILS*/
+@import 'utils/variables';
+@import 'utils/mixins';
+/*Import provenant du dossier COMPONENTS*/
+@import 'components/button';
+/*Import provenant du dossier LAYOUT*/
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
