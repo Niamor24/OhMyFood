@@ -1,0 +1,31 @@
+.fonctionnement > h2 {
+    margin-top: 35px;
+}
+
+.etapes {
+    margin-top: 35px;
+}
+
+.square {
+    width: 85%;
+    height: 75px;
+    background-color: #EAEAEA;
+    @include flex-center-vertical;
+    justify-content: space-between;
+    border-radius: 20px;
+    @include shadow;
+}
+
+.chiffre {
+    @include flex-center-vertical;
+    @include cercle;
+    width: 24px;
+    height: 24px;
+    background-color: $violet;
+    color: $white;
+    margin-left: -11px;
+}
+
+.text-fonction {
+    @include flex-center-vertical;
+}

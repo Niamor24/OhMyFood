@@ -17,3 +17,11 @@
 @mixin font-shrikhand {
     font-family: "Shrikhand", serif;
 }
+
+@mixin cercle {
+    border-radius: 90px;
+}
+
+@mixin shadow {
+    box-shadow: 0px 4px 15px rgb(180, 179, 179);
+}
