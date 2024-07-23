@@ -14,8 +14,8 @@
     overflow: hidden;
     border-radius: 15px 15px 0 0;
     & .img-cover {
-        width: 346px;
-        height: 231px;
+        width: 100%;
+        height: auto;
         object-fit: cover;
     }
 }

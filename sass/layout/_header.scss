@@ -9,6 +9,11 @@
     & p {
         font-size: 16px;
     }
+    & .localisation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .square-omf {
