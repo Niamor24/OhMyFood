@@ -1,0 +1,41 @@
+.restaurants-card > h2 {
+    margin-bottom: 30px;
+}
+
+.card-restaurants {
+    height: 250px;
+    width: 100%;
+    background-color: #EAEAEA;
+}
+
+.image-card {
+    height: 175px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    & .img-cover {
+        width: 346px;
+        height: 231px;
+        object-fit: cover;
+    }
+}
+
+.text-card {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 20px;
+    & .titre-card {
+        margin-left: 20px;
+    }
+    & .icone-card {
+        margin-right: 20px;
+    }
+    & .p-notbold {
+        font-weight: 300;
+    }
+}

@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -19,6 +19,7 @@ html {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 h2 {
@@ -33,7 +34,7 @@ p {
 /*Import provenant du dossier UTILS*/
 /*Import provenant du dossier COMPONENTS*/
 .button {
-  width: 100%;
+  width: 85%;
   height: 50px;
   border-radius: 30px;
   border: none;
@@ -42,6 +43,48 @@ p {
   font-size: 16px;
   font-weight: 500;
   padding: 0 20px;
+}
+
+.restaurants-card > h2 {
+  margin-bottom: 30px;
+}
+
+.card-restaurants {
+  height: 250px;
+  width: 100%;
+  background-color: #EAEAEA;
+}
+
+.image-card {
+  height: 175px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+.image-card .img-cover {
+  width: 346px;
+  height: 231px;
+  object-fit: cover;
+}
+
+.text-card {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  margin-bottom: 20px;
+}
+.text-card .titre-card {
+  margin-left: 20px;
+}
+.text-card .icone-card {
+  margin-right: 20px;
+}
+.text-card .p-notbold {
+  font-weight: 300;
 }
 
 /*Import provenant du dossier LAYOUT*/
@@ -61,6 +104,7 @@ p {
 
 .square-omf {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 63px;
@@ -86,7 +130,7 @@ p {
   gap: 35px;
   width: 100%;
   height: 350px;
-  padding: 50px 0;
+  padding: 50px 20px;
   z-index: -1;
   gap: 30px;
   flex-direction: column;
@@ -104,27 +148,31 @@ p {
   text-align: center;
 }
 
+.center-btn {
+  display: flex;
+  justify-content: center;
+}
+
+/*FONCTIONNEMENT SECTION*/
 .fonctionnement > h2 {
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
 .etapes {
-  margin-top: 35px;
+  margin: 30px 0;
 }
-
-.square {
-  width: 85%;
+.etapes .square {
+  width: 100%;
   height: 75px;
   background-color: #EAEAEA;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgb(180, 179, 179);
 }
-
-.chiffre {
+.etapes .chiffre {
   display: flex;
+  justify-content: center;
   align-items: center;
   border-radius: 90px;
   width: 24px;
@@ -133,8 +181,17 @@ p {
   color: #fff;
   margin-left: -11px;
 }
-
-.text-fonction {
+.etapes .text-fonction {
   display: flex;
   align-items: center;
+}
+.etapes .square > .text-fonction > p {
+  margin-left: 20px;
+}
+
+/*RESTAURANT SECTION*/
+.restaurants-card {
+  margin-top: 50px;
+  padding-top: 30px;
+  background-color: #EAEAEA;
 }/*# sourceMappingURL=main.css.map */

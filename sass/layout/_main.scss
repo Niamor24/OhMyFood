@@ -1,31 +1,38 @@
+/*FONCTIONNEMENT SECTION*/
 .fonctionnement > h2 {
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
 .etapes {
-    margin-top: 35px;
+    margin: 30px 0;
+    & .square {
+        width: 100%;
+        height: 75px;
+        background-color: #EAEAEA;
+        @include flex-center-vertical;
+        border-radius: 20px;
+        @include shadow;
+    }
+    & .chiffre {
+        @include flex-center-hev;
+        @include cercle;
+        width: 24px;
+        height: 24px;
+        background-color: $violet;
+        color: $white;
+        margin-left: -11px;
+    }
+    & .text-fonction {
+        @include flex-center-vertical;
+    }
+    & .square > .text-fonction > p {
+        margin-left: 20px;
+    }
 }
+/*RESTAURANT SECTION*/
 
-.square {
-    width: 85%;
-    height: 75px;
+.restaurants-card {
+    margin-top: 50px;
+    padding-top: 30px;
     background-color: #EAEAEA;
-    @include flex-center-vertical;
-    justify-content: space-between;
-    border-radius: 20px;
-    @include shadow;
-}
-
-.chiffre {
-    @include flex-center-vertical;
-    @include cercle;
-    width: 24px;
-    height: 24px;
-    background-color: $violet;
-    color: $white;
-    margin-left: -11px;
-}
-
-.text-fonction {
-    @include flex-center-vertical;
 }
