@@ -138,6 +138,7 @@ footer {
   border-bottom: solid 3px #99e2d0;
 }
 .entrees .ex-menu {
+  cursor: pointer;
   padding: 0 10px;
   margin-top: 20px;
   display: flex;
@@ -148,6 +149,8 @@ footer {
   width: 100%;
   height: 69px;
   line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
   box-shadow: 0px 4px 15px rgb(180, 179, 179);
 }
 .entrees .ex-menu .notboldd {
@@ -155,9 +158,19 @@ footer {
   font-size: 15px;
 }
 .entrees .prix {
-  height: 65%;
+  height: 100%;
   display: flex;
   align-items: end;
+  text-overflow: ellipsis;
+}
+.entrees .prix p {
+  margin-bottom: 12px;
+  margin-right: 10px;
+}
+
+.text-overflow > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .center-btn {
@@ -168,4 +181,22 @@ footer {
 
 .button {
   padding: 0 40px;
+}
+
+/*ANIMATION*/
+.animation-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 60px;
+  margin-right: -70px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99e2d0;
+  transition: 0.3s ease-out;
+}
+
+.ex-menu:hover .animation-square {
+  transition: 0.3s ease-in;
+  margin-right: -10px;
 }/*# sourceMappingURL=restaurants.css.map */
