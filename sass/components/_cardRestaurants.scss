@@ -9,6 +9,7 @@
 }
 
 .image-card {
+    position: relative;
     height: 175px;
     width: 100%;
     overflow: hidden;
@@ -17,6 +18,18 @@
         width: 100%;
         height: auto;
         object-fit: cover;
+    }
+    & .new {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 3;
+        padding: 4px;
+        border-radius: 2px;
+        border: 1px solid $vertFonce;
+        background-color: $vertPastel;
+        color: $vertFonce;
+        font-size: 14px !important;
     }
 }
 

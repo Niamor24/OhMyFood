@@ -50,6 +50,7 @@ footer {
   font-size: 16px;
   font-weight: 500;
   padding: 0 20px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .restaurants-card > h2 {
@@ -63,6 +64,7 @@ footer {
 }
 
 .image-card {
+  position: relative;
   height: 175px;
   width: 100%;
   overflow: hidden;
@@ -72,6 +74,18 @@ footer {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+.image-card .new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  padding: 4px;
+  border-radius: 2px;
+  border: 1px solid #008766;
+  background-color: #99e2d0;
+  color: #008766;
+  font-size: 14px !important;
 }
 
 .text-card {
@@ -226,7 +240,7 @@ footer {
   font-weight: 500;
 }
 
-.p-notbold {
+.notbold {
   font-weight: 400;
   padding-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
