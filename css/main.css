@@ -98,12 +98,16 @@ footer {
   background-color: #fff;
   border-radius: 0 0 15px 15px;
   margin-bottom: 20px;
+  position: relative;
 }
 .text-card .titre-card {
   margin-left: 20px;
 }
 .text-card .icone-card {
   margin-right: 20px;
+  position: absolute;
+  right: 2%;
+  bottom: 30%;
 }
 .text-card .p-notbold {
   font-weight: 300;
@@ -111,6 +115,17 @@ footer {
 .text-card .heart {
   width: 20px;
   height: 20px;
+}
+
+.heart-full {
+  color: #9356DC;
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+
+.heart-full:hover {
+  transition: 0.5s ease-in;
+  opacity: 1;
 }
 
 /*Import provenant du dossier LAYOUT*/
@@ -177,6 +192,23 @@ footer {
   font-size: 18px;
   font-weight: 300;
   text-align: center;
+}
+
+.bx-phone, .bx-list-ul, .bxs-store {
+  color: #7e7e7e;
+}
+
+.test {
+  transition: 0.3s ease-out;
+}
+
+.etapes {
+  cursor: pointer;
+}
+
+.etapes:hover .test {
+  color: #9356DC;
+  transition: 0.3s ease-in;
 }
 
 .center-btn {

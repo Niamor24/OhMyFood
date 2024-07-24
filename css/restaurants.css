@@ -54,6 +54,17 @@ footer {
   cursor: pointer;
 }
 
+.heart-full {
+  color: #9356DC;
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+
+.heart-full:hover {
+  transition: 0.5s ease-in;
+  opacity: 1;
+}
+
 /*Import provenant du dossier LAYOUT*/
 .titre-footer {
   font-family: "Shrikhand", serif;
@@ -116,6 +127,7 @@ footer {
 
 .title-and-heart-restaurant {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
 }
@@ -123,6 +135,12 @@ footer {
   font-family: "Shrikhand", serif;
   font-size: 28px;
   font-style: italic;
+}
+.title-and-heart-restaurant .icone-card {
+  position: absolute;
+  right: 3%;
+  bottom: 16%;
+  cursor: pointer;
 }
 
 .entrees {
@@ -168,11 +186,6 @@ footer {
   margin-right: 10px;
 }
 
-.text-overflow > p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .center-btn {
   display: flex;
   justify-content: center;
@@ -199,4 +212,5 @@ footer {
 .ex-menu:hover .animation-square {
   transition: 0.3s ease-in;
   margin-right: -10px;
+  text-overflow: ellipsis;
 }/*# sourceMappingURL=restaurants.css.map */

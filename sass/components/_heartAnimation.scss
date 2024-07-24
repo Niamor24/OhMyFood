@@ -1,0 +1,10 @@
+.heart-full {
+    color: $violet;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+.heart-full:hover {
+    transition: 0.5s ease-in;
+    opacity: 1;
+}

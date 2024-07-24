@@ -9,12 +9,19 @@
 
 .title-and-heart-restaurant {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     & h2 {
         @include font-shrikhand;
         font-size: 28px;
         font-style: italic;
+    }
+    & .icone-card {
+        position: absolute;
+        right: 3%;
+        bottom: 16%;
+        cursor: pointer;
     }
 }
 
@@ -61,11 +68,6 @@
     }
 }
 
-.text-overflow > p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .center-btn {
     @include flex-center-horizontal;
     margin-top: 40px;
@@ -93,4 +95,5 @@
 .ex-menu:hover .animation-square {
     transition: 0.3s ease-in;
     margin-right: -10px;
+    text-overflow: ellipsis;
 }
