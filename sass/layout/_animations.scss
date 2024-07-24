@@ -1,0 +1,89 @@
+/*LOADER*/
+.circle-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    animation: spin-container 3s linear forwards;
+    .circle {
+      border: 10px solid rgba($vertPastel, 0.4);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      /*placement loader en milieu de page*/
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      &__loader::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        bottom: -10px;
+        right: -10px;
+        border: 10px solid transparent;
+        border-top-color: $violet;
+        border-radius: 50%;
+        animation: spin 1s linear 3; 
+      }
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin-container {
+    0% {
+      opacity: 1;
+      z-index: 9999;
+    }
+    98% {
+      opacity: 1;
+      z-index: 9999;
+    }
+    100% {
+      opacity: 0;
+      z-index: -9999;
+    }
+  }
+
+  /*SLIDE UP RESTAURANTS*/
+
+  .slide-up-one {
+    animation: 0.5s ease-in slide-up-one;
+  }
+
+  .slide-up-two {
+    animation: 1.5s ease-in slide-up-two;
+  }
+
+  .slide-up-three {
+    animation: 3s ease-in slide-up-two;
+  }
+
+  @keyframes slide-up-one {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  @keyframes slide-up-two {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
