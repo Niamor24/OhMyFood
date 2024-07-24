@@ -15,6 +15,7 @@
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -41,7 +42,6 @@ footer {
 /*Import provenant du dossier UTILS*/
 /*Import provenant du dossier COMPONENTS*/
 .button {
-  width: 65%;
   height: 50px;
   border-radius: 30px;
   border: none;
@@ -51,6 +51,7 @@ footer {
   font-weight: 500;
   padding: 0 20px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  cursor: pointer;
 }
 
 .restaurants-card > h2 {
@@ -181,6 +182,10 @@ footer {
 .center-btn {
   display: flex;
   justify-content: center;
+}
+
+.button {
+  width: 100%;
 }
 
 /*FONCTIONNEMENT SECTION*/

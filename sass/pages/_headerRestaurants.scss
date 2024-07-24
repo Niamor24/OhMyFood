@@ -1,0 +1,31 @@
+.head-of-page-restaurants {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+    width: 100%;
+    & h1 {
+        @include font-shrikhand;
+        font-size: 30px;
+    }
+    & .arrow-back {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+    }
+}
+
+.image-header {
+    z-index: -1;
+    height: 275px;
+    width: 100%;
+    overflow: hidden;
+    & .image-cover-deux {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+}

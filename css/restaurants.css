@@ -1,1 +1,171 @@
-/*# sourceMappingURL=restaurants.css.map */
+@charset "UTF-8";
+/*Import provenant du dossier GENERAL*/
+/*Règle de base du CSS*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 30px;
+  line-height: 1.5;
+}
+
+/*Import provenant du dossier UTILS*/
+/*Import provenant du dossier COMPONENTS*/
+.button {
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: #9356DC;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 20px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  cursor: pointer;
+}
+
+/*Import provenant du dossier LAYOUT*/
+.titre-footer {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  padding: 20px 0 10px 0;
+}
+
+.inline-footer {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.notbold {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+/*Import provenant du dossier PAGES*/
+.head-of-page-restaurants {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 63px;
+  width: 100%;
+}
+.head-of-page-restaurants h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+}
+.head-of-page-restaurants .arrow-back {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.image-header {
+  z-index: -1;
+  height: 275px;
+  width: 100%;
+  overflow: hidden;
+}
+.image-header .image-cover-deux {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.menu {
+  position: relative;
+  background-color: #F6F6F6;
+  padding: 40px 20px;
+  border-radius: 30px 30px 0 0;
+  margin-top: -60px;
+  z-index: 0;
+}
+
+.title-and-heart-restaurant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-and-heart-restaurant h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.entrees {
+  margin-top: 40px;
+}
+.entrees .underline {
+  position: relative;
+}
+.entrees .underline-green {
+  position: absolute;
+  top: 22.5px;
+  width: 12%;
+  border-bottom: solid 3px #99e2d0;
+}
+.entrees .ex-menu {
+  padding: 0 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 100%;
+  height: 69px;
+  line-height: 1.4;
+  box-shadow: 0px 4px 15px rgb(180, 179, 179);
+}
+.entrees .ex-menu .notboldd {
+  font-weight: 300;
+  font-size: 15px;
+}
+.entrees .prix {
+  height: 65%;
+  display: flex;
+  align-items: end;
+}
+
+.center-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.button {
+  padding: 0 40px;
+}/*# sourceMappingURL=restaurants.css.map */
