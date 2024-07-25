@@ -36,3 +36,12 @@ footer {
     padding: 30px;
     line-height: 1.5;
 }
+
+@media (min-width: 1440px){
+    .container {
+        padding: 0 100px;
+    }
+    .container-deux {
+        padding: 0 150px;
+    }
+}

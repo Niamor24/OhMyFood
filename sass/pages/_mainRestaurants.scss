@@ -10,7 +10,6 @@
 .title-and-heart-restaurant {
     display: flex;
     position: relative;
-    justify-content: space-between;
     align-items: center;
     & h2 {
         @include font-shrikhand;
@@ -106,4 +105,19 @@
 .ex-menu:hover .animation-square {
     transition: 0.3s ease-in;
     margin-right: -10px;
+}
+
+@media (min-width: 1440px){
+    .container-deux {
+        padding: 0 200px;
+    }
+    .menu {
+        padding: 40px 200px;
+    }
+    .title-and-heart-restaurant {
+        justify-content: center;
+        & .icone-card {
+            left: 50%;
+        }
+    }
 }

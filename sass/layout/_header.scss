@@ -60,28 +60,9 @@
     }
 }
 
-.bx-phone, .bx-list-ul, .bxs-store {
-   color:#7e7e7e;
-}
 
-.test {
-    transition: 0.3s ease-out;
-}
-
-.etapes {
-    cursor: pointer;
-}
-
-.etapes:hover .test {
-    color: $violet;
-    transition: 0.3s ease-in;
-}
-
-.center-btn {
-    display: flex;
-    justify-content: center;
-}
-
-.button {
-    width: 100%;
+@media (min-width: 1440px){
+    .reserved h2 {
+        font-size: 40px;
+    }
 }

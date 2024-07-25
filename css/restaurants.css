@@ -39,6 +39,14 @@ footer {
   line-height: 1.5;
 }
 
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 100px;
+  }
+  .container-deux {
+    padding: 0 150px;
+  }
+}
 /*Import provenant du dossier UTILS*/
 /*Import provenant du dossier COMPONENTS*/
 .button {
@@ -213,7 +221,6 @@ footer {
 .title-and-heart-restaurant {
   display: flex;
   position: relative;
-  justify-content: space-between;
   align-items: center;
 }
 .title-and-heart-restaurant h2 {
@@ -308,4 +315,19 @@ footer {
 .ex-menu:hover .animation-square {
   transition: 0.3s ease-in;
   margin-right: -10px;
+}
+
+@media (min-width: 1440px) {
+  .container-deux {
+    padding: 0 200px;
+  }
+  .menu {
+    padding: 40px 200px;
+  }
+  .title-and-heart-restaurant {
+    justify-content: center;
+  }
+  .title-and-heart-restaurant .icone-card {
+    left: 50%;
+  }
 }/*# sourceMappingURL=restaurants.css.map */

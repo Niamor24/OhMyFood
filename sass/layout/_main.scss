@@ -30,6 +30,33 @@
         margin-left: 20px;
     }
 }
+
+.bx-phone, .bx-list-ul, .bxs-store {
+    color:#7e7e7e;
+ }
+ 
+ .test {
+     transition: 0.3s ease-out;
+ }
+ 
+ .etapes {
+     cursor: pointer;
+ }
+ 
+ .etapes:hover .test {
+     color: $violet;
+     transition: 0.3s ease-in;
+ }
+ 
+ .center-btn {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .button {
+     width: 100%;
+ }
+
 /*RESTAURANT SECTION*/
 
 .restaurants-card {
@@ -37,4 +64,58 @@
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #EAEAEA;
+}
+
+@media (min-width: 1440px){
+    .fonctionnement {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 4.8%;
+        grid-template-rows: 2;
+        & .zero {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        & .un {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        & .deux {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        & .trois {
+            grid-column: 3;
+            grid-row: 2;
+        }
+    }
+
+    .restaurants-card {
+        display: grid;
+        grid-template-columns: 47.5% 47.5%;
+        column-gap: 5%;
+        row-gap: 3%;
+        grid-template-rows: 3;
+        & .zero-card {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        & .one-card {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        & .two-card {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        & .three-card {
+            grid-column: 1;
+            grid-row: 3;
+        }
+        & .four-card {
+            grid-column: 2;
+            grid-row: 3;
+            margin-bottom: 30px;
+        }
+    }
 }
