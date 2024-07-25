@@ -260,6 +260,12 @@ footer {
   font-weight: 300;
   font-size: 15px;
 }
+.entrees .grow {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .entrees .prix {
   height: 100%;
   display: flex;
@@ -269,6 +275,11 @@ footer {
 .entrees .prix p {
   margin-bottom: 12px;
   margin-right: 10px;
+}
+
+.nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .center-btn {
@@ -297,5 +308,4 @@ footer {
 .ex-menu:hover .animation-square {
   transition: 0.3s ease-in;
   margin-right: -10px;
-  text-overflow: ellipsis;
 }/*# sourceMappingURL=restaurants.css.map */

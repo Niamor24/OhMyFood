@@ -56,6 +56,12 @@
             font-size: 15px;
         }
     }
+    & .grow {
+        flex-grow: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
     & .prix {
         height: 100%;
         display: flex;
@@ -66,6 +72,11 @@
             margin-right: 10px;
         }
     }
+}
+
+.nowrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .center-btn {
@@ -95,5 +106,4 @@
 .ex-menu:hover .animation-square {
     transition: 0.3s ease-in;
     margin-right: -10px;
-    text-overflow: ellipsis;
 }
