@@ -88,9 +88,52 @@ footer {
 
 .notbold {
   font-weight: 400;
-  padding-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  .grid-footer {
+    display: grid;
+    justify-content: end;
+    column-gap: 5%;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 1;
+  }
+  .grid-footer .titre-footer {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0px;
+    align-items: center;
+  }
+  .grid-footer .grid-footer-label {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    column-gap: 3%;
+    grid-template-columns: auto auto auto auto;
+    grid-row: 1;
+  }
+  .grid-footer .grid-footer-label .footer-un {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .grid-footer .grid-footer-label .footer-deux {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .grid-footer .grid-footer-label .footer-trois {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .grid-footer .grid-footer-label .footer-quatre {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .notbold {
+    padding: 0px;
+  }
+}
 /*LOADER*/
 .circle-container {
   width: 100%;
@@ -220,6 +263,7 @@ footer {
 
 .title-and-heart-restaurant {
   display: flex;
+  width: 100%;
   position: relative;
   align-items: center;
 }
@@ -229,6 +273,7 @@ footer {
   font-style: italic;
 }
 .title-and-heart-restaurant .icone-card {
+  display: flex;
   position: absolute;
   right: 3%;
   bottom: 16%;
@@ -317,17 +362,22 @@ footer {
   margin-right: -10px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .container-deux {
-    padding: 0 200px;
+    padding: 0 15%;
   }
   .menu {
-    padding: 40px 200px;
+    padding: 40px 20%;
   }
   .title-and-heart-restaurant {
     justify-content: center;
   }
   .title-and-heart-restaurant .icone-card {
-    left: 50%;
+    display: flex;
+    position: sticky;
+    margin-left: 15px;
+  }
+  .title-and-heart-restaurant .heart-regul {
+    margin-right: -45px;
   }
 }/*# sourceMappingURL=restaurants.css.map */

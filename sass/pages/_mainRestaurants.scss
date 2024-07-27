@@ -9,6 +9,7 @@
 
 .title-and-heart-restaurant {
     display: flex;
+    width: 100%;
     position: relative;
     align-items: center;
     & h2 {
@@ -17,6 +18,7 @@
         font-style: italic;
     }
     & .icone-card {
+        display: flex;
         position: absolute;
         right: 3%;
         bottom: 16%;
@@ -107,17 +109,22 @@
     margin-right: -10px;
 }
 
-@media (min-width: 1440px){
+@media (min-width: 768px){
     .container-deux {
-        padding: 0 200px;
+        padding: 0 15%;
     }
     .menu {
-        padding: 40px 200px;
+        padding: 40px 20%;
     }
     .title-and-heart-restaurant {
         justify-content: center;
         & .icone-card {
-            left: 50%;
+            display: flex;
+            position: sticky;
+            margin-left: 15px;
+        }
+        & .heart-regul {
+            margin-right: -45px;
         }
     }
 }
