@@ -59,9 +59,12 @@ footer {
   padding: 0 20px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   cursor: pointer;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3490196078);
+  transition: ease-out 0.2s;
 }
 
 a:hover > .button {
+  transition: ease-in 0.2s;
   background: linear-gradient(200.64deg, #a072d8 -5.2%, #fb98df 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
@@ -95,7 +98,7 @@ a:hover > .button {
   z-index: 3;
   padding: 4px;
   border-radius: 2px;
-  border: 1px solid #008766;
+  border: 1px solid transparent;
   background-color: #99e2d0;
   color: #008766;
   font-size: 14px !important;
@@ -262,9 +265,8 @@ a:hover > .button {
   cursor: pointer;
 }
 
-.etapes:hover .test {
+.test-un {
   color: #9356DC;
-  transition: 0.3s ease-in;
 }
 
 .center-btn {
@@ -365,6 +367,9 @@ a:hover > .button {
     grid-row: 1;
     padding: 0px;
     align-items: center;
+  }
+  .grid-footer .icone-footer {
+    margin-left: 20px !important;
   }
   .grid-footer .grid-footer-label {
     grid-column: 1;

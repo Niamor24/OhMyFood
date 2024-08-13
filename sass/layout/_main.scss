@@ -42,10 +42,9 @@
  .etapes {
      cursor: pointer;
  }
- 
- .etapes:hover .test {
-     color: $violet;
-     transition: 0.3s ease-in;
+
+ .test-un {
+    color: $violet;
  }
  
  .center-btn {
