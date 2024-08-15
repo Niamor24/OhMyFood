@@ -37,11 +37,26 @@ footer {
     line-height: 1.5;
 }
 
+.sizey {
+    font-size: 20px;
+    color: grey;
+    width: 20px;
+}
+
+.sizeyy {
+    font-size: 15px;
+    width: 25px;
+}
+
 @media (min-width: 1440px){
     .container {
         padding: 0 100px;
     }
     .container-deux {
         padding: 0 150px;
+    }
+
+    .sizeyy {
+        width: 0px;
     }
 }
